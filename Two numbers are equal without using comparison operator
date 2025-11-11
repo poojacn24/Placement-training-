@@ -1,0 +1,22 @@
+#include<stdio.h>
+void are EqualSubtraction(inta, intb)
+{
+   if((a-b)==0)
+   {
+      printf("%d and %d are equal\n", a, b);
+    }
+    else
+    {
+       printf("%d and %d are not equal\n", a, b);
+    }
+}
+int main()
+{
+   int num1=7;
+   int num2=7;
+   int num3=12;
+   areEqualSubtraction(num1,num2);
+   areEqualSubtraction(num1,num3);
+   return 0;
+}
+
