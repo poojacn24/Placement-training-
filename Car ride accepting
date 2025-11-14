@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main() 
+{
+    char customerName[50];
+    char pickup[100];
+    char drop[100];
+    char choice;
+    printf("=== CAB ORDER SYSTEM ===\n\n");
+    printf("Enter Customer Name: ");
+    fgets(customerName, sizeof(customerName), stdin);
+    printf("Enter Pickup Location: ");
+    fgets(pickup, sizeof(pickup), stdin);
+    printf("Enter Drop Location: ");
+    fgets(drop, sizeof(drop), stdin);
+    printf("\n--- Ride Request Received ---\n");
+    printf("Customer Name : %s", customerName);
+    printf("Pickup Point  : %s", pickup);
+    printf("Drop Point    : %s", drop);
+    printf("\nDo you want to ACCEPT the ride? (Y/N): ");
+    scanf(" %c", &choice);
+    if (choice == 'Y' || choice == 'y')
+    {
+        printf("\n Ride Accepted! Please proceed to pickup location.\n");
+    } 
+    else if (choice == 'N' || choice == 'n')
+    {
+        printf("\n Ride Rejected.\n");
+    }  
+    else 
+    {
+        printf("\n Invalid choice. Please enter Y or N.\n");
+    }
+    printf("\nThank you for using CAB DRIVER SYSTEM!\n");
+    return 0;
+}
